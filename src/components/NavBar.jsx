@@ -1,16 +1,21 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const cartItems = useSelector((store) => store.cart);
+
+  const cartCount = cartItems.length || 0;
+
   return (
     <>
-      <div className="navbar bg-gray-300 p-5 shadow-sm">
+      <div className="navbar bg-gray-300 p-5 shadow-sm ">
         <div className="flex-1">
           <Link
             to={"/"}
             className="btn bg-purple-800 text-white hover:bg-purple-500  hover:text-white text-xl px-3  py-5 ml-10 tracking-widest font-gothic font-light"
           >
-            OFFER SHOP
+            OFFERS SHOP
           </Link>
         </div>
         <Link to={"/add-product"}>
@@ -43,7 +48,7 @@ const NavBar = () => {
                     />{" "}
                   </svg>
                   <span className="badge badge-sm indicator-item bg-black text-white border-none">
-                    8
+                    {cartCount}
                   </span>
                 </div>
               </div>
