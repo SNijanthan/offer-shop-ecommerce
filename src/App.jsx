@@ -4,19 +4,23 @@ import Main from "./components/Main";
 import AddProduct from "./components/AddProduct";
 import Cart from "./components/Cart";
 import Products from "./components/Products";
+import appStore from "./utils/appStore";
+import { Provider } from "react-redux";
 
 const App = () => {
   return (
     <>
-      <BrowserRouter basename="/">
-        <Routes>
-          <Route path="/" element={<Main />}>
-            <Route path="/" element={<Products />}></Route>
-            <Route path="/add" element={<AddProduct />} />
-            <Route path="/cart" element={<Cart />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Provider store={appStore}>
+        <BrowserRouter basename="/">
+          <Routes>
+            <Route path="/" element={<Main />}>
+              <Route path="/" element={<Products />}></Route>
+              <Route path="/add" element={<AddProduct />} />
+              <Route path="/cart" element={<Cart />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </>
   );
 };
