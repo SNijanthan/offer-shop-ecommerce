@@ -13,6 +13,11 @@ const NavBar = () => {
             OFFER SHOP
           </Link>
         </div>
+        <Link to={"/add-product"}>
+          <button className="mr-15 btn btn-accent text-white font-poppins">
+            Add Product
+          </button>
+        </Link>
         <Link to={"/cart"}>
           <div className="flex-none mr-15">
             <div className="dropdown dropdown-end">

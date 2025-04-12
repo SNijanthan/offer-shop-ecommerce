@@ -4,14 +4,33 @@ const productsSlice = createSlice({
   name: "products",
   initialState: [],
   reducers: {
-    addProducts: (state, action) => {
+    // Set the full product list (from API or reset)
+    setProducts: (state, action) => {
       return action.payload;
     },
+
+    // Add or edit a single product
+    updateProducts: (state, action) => {
+      const updatedProduct = action.payload;
+      const index = state.findIndex((p) => p.id === updatedProduct.id);
+
+      if (index !== -1) {
+        // Product exists, update it
+        state[index] = updatedProduct;
+      } else {
+        // Product doesn't exist, add it
+        state.push(updatedProduct);
+      }
+    },
+
+    // Remove a product by ID
     removeProducts: (state, action) => {
-      return state.filter((product) => product.id !== action.payload);
+      const idToRemove = action.payload;
+      return state.filter((p) => p.id !== idToRemove);
     },
   },
 });
 
-export const { addProducts } = productsSlice.actions;
+export const { setProducts, updateProducts, removeProducts } =
+  productsSlice.actions;
 export default productsSlice.reducer;

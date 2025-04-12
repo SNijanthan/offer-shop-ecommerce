@@ -24,7 +24,7 @@ const Products = () => {
             (cat) => (
               <button
                 key={cat}
-                className="btn bg-purple-700 text-white capitalize mx-2"
+                className="btn bg-purple-600 rounded-full hover:bg-black text-white capitalize mx-2"
                 onClick={() => {
                   filterByCategory(cat);
                   if (cat === "all") setSortType(null);
@@ -37,13 +37,13 @@ const Products = () => {
         </div>
         <div className="mx-5">
           <button
-            className="btn bg-purple-700 text-white capitalize mx-2"
+            className="btn bg-purple-600 rounded-full hover:bg-black text-white capitalize mx-2"
             onClick={() => setSortType("lowToHigh")}
           >
-            Price: Low To Hign
+            Price: Low To High
           </button>
           <button
-            className="btn bg-purple-700 text-white capitalize mx-2"
+            className="btn bg-purple-600 rounded-full hover:bg-black text-white capitalize mx-2"
             onClick={() => setSortType("highToLow")}
           >
             Price: High To Low
@@ -60,8 +60,12 @@ const Products = () => {
               <h2 className="card-title font-fira">{product.title}</h2>
               <p className="font-poppins">{product.description}</p>
               <p className="font-poppins font-bold">₹ {product.price}</p>
-              <div className="card-actions">
-                <button className="btn btn-primary">Add to cart</button>
+            </div>
+            <div className="card-actions flex justify-center items-center pb-5">
+              <button className="btn btn-primary">Add to cart</button>
+              <div className="ml-15">
+                <button className="btn bg-gray-300 mx-8">✏️</button>
+                <button className="btn bg-gray-300">🗑️</button>
               </div>
             </div>
           </div>
