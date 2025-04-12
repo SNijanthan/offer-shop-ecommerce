@@ -8,13 +8,13 @@ const NavBar = () => {
         <div className="flex-1">
           <Link
             to={"/"}
-            className="btn btn-ghost hover:bg-purple-800 hover:text-white text-xl px-3  py-5 ml-5 tracking-widest font-gothic font-light"
+            className="btn bg-purple-800 text-white hover:bg-purple-500  hover:text-white text-xl px-3  py-5 ml-10 tracking-widest font-gothic font-light"
           >
             OFFER SHOP
           </Link>
         </div>
-        <Link to="/cart">
-          <div className="flex-none mr-10">
+        <Link to={"/cart"}>
+          <div className="flex-none mr-15">
             <div className="dropdown dropdown-end">
               <div
                 tabIndex={0}
