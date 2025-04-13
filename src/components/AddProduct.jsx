@@ -54,7 +54,7 @@ const AddProduct = () => {
       setToast(false);
       setSuccess(false);
       navigate("/");
-    }, 3000);
+    }, 1500);
   };
 
   return (

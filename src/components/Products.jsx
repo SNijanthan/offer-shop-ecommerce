@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import useFetchProducts from "../customHook/useFetchProducts";
 import useFilterProducts from "../customHook/useFilterProducts";
 import { addToCart } from "../utils/cartSlice";
+import EditProduct from "./EditProduct";
+import { removeProducts } from "../utils/productsSlice";
 
 const Products = () => {
   useFetchProducts();
@@ -14,8 +16,12 @@ const Products = () => {
   const [addedProducts, setAddedProducts] = useState([]);
 
   const [toast, setToast] = useState(false);
+  const [deleteToast, setDeleteToast] = useState(false);
 
   const dispatch = useDispatch();
+
+  const [editProduct, setEditProduct] = useState([]);
+  const [isEditOpen, setIsEditOpen] = useState(false);
 
   const sortedProducts = [...filteredProducts].sort((a, b) => {
     if (sortType === "lowToHigh") return a.price - b.price;
@@ -29,6 +35,14 @@ const Products = () => {
     setToast(true);
     setTimeout(() => {
       setToast(false);
+    }, 1500);
+  };
+
+  const handleDeleteProduct = (id) => {
+    dispatch(removeProducts(id));
+    setDeleteToast(true);
+    setTimeout(() => {
+      setDeleteToast(false);
     }, 1500);
   };
 
@@ -86,6 +100,15 @@ const Products = () => {
                 </div>
               </div>
             )}
+            {deleteToast && (
+              <div className="toast toast-top toast-center border-none">
+                <div className="alert alert-success">
+                  <span className="font-fira text-white font-bold">
+                    Product Deleted Successfully..!
+                  </span>
+                </div>
+              </div>
+            )}
             <div className="card-actions flex justify-center items-center pb-5">
               <button
                 className="btn btn-primary px-8 w-40"
@@ -96,13 +119,34 @@ const Products = () => {
                   : "Add to Cart"}
               </button>
               <div className=" ml-10">
-                <button className="btn bg-gray-300 mx-6">✏️</button>
-                <button className="btn bg-gray-300">🗑️</button>
+                <button
+                  className="rounded-full p-1.5 bg-green-300 mx-5"
+                  onClick={() => {
+                    setIsEditOpen(true), setEditProduct(product);
+                  }}
+                >
+                  ✏️
+                </button>
+                <button
+                  className="rounded-full p-1.5 bg-red-800"
+                  onClick={() => handleDeleteProduct(product.id)}
+                >
+                  🗑️
+                </button>
               </div>
             </div>
           </div>
         ))}
       </div>
+      <EditProduct
+        product={editProduct}
+        setProduct={setEditProduct}
+        isOpen={isEditOpen}
+        toast={false}
+        onClose={() => {
+          setIsEditOpen(true), setEditProduct(null);
+        }}
+      />
     </div>
   );
 };
