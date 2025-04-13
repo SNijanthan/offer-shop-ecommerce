@@ -5,9 +5,10 @@ import useFilterProducts from "../customHook/useFilterProducts";
 import { addToCart } from "../utils/cartSlice";
 import EditProduct from "./EditProduct";
 import { removeProducts } from "../utils/productsSlice";
+import Error from "./Error";
 
 const Products = () => {
-  useFetchProducts();
+  const { error } = useFetchProducts();
   const products = useSelector((store) => store.products);
 
   const { filteredProducts, filterByCategory } = useFilterProducts(products);
@@ -28,6 +29,8 @@ const Products = () => {
     if (sortType === "highToLow") return b.price - a.price;
     return 0;
   });
+
+  if (error) return <Error />;
 
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
