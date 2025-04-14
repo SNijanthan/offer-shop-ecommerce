@@ -1,0 +1,164 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Men's Classic Cotton Shirt",
+      "price": 1299,
+      "description": "A timeless button-down shirt crafted from breathable cotton, ideal for daily wear.",
+      "category": "clothes",
+      "image": "https://images.unsplash.com/photo-1623658580851-3b25bf83b4ea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWVuJ3MlMjBDbGFzc2ljJTIwQ290dG9uJTIwU2hpcnR8ZW58MHwwfDB8fHwy"
+    },
+    {
+      "id": 2,
+      "title": "Women's High-Waisted Jeans",
+      "price": 1799,
+      "description": "Stylish and durable high-waisted jeans that flatter every silhouette.",
+      "category": "clothes",
+      "image": "https://images.unsplash.com/photo-1714729382642-59f19c74440e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "title": "Casual Cotton T-shirt",
+      "price": 699,
+      "description": "Soft and lightweight T-shirt, perfect for summer lounging or layering.",
+      "category": "clothes",
+      "image": "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fENhc3VhbCUyMENvdHRvbiUyMFQlMjBzaGlydHxlbnwwfDB8MHx8fDI%3D"
+    },
+    {
+      "id": 4,
+      "title": "Unisex Zip Hoodie",
+      "price": 1599,
+      "description": "Fleece-lined zip-up hoodie with a relaxed fit for comfort and warmth.",
+      "category": "clothes",
+      "image": "https://images.unsplash.com/photo-1608739871923-7da6d372f3c2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8VW5pc2V4JTIwWmlwJTIwSG9vZGllfGVufDB8MHwwfHx8Mg%3D%3D"
+    },
+    {
+      "id": 5,
+      "title": "Formal Blazer",
+      "price": 3499,
+      "description": "Tailored formal blazer designed for a sharp, professional appearance.",
+      "category": "clothes",
+      "image": "https://images.unsplash.com/photo-1633655442168-c6ef0ed2f984?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Rm9ybWFsJTIwQmxhemVyfGVufDB8MHwwfHx8Mg%3D%3D"
+    },
+    {
+      "id": 6,
+      "title": "Wireless Bluetooth Earbuds",
+      "price": 3499,
+      "description": "Noise-isolating earbuds with touch controls and a compact charging case.",
+      "category": "electronics",
+      "image": "https://images.unsplash.com/photo-1627989580309-bfaf3e58af6f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2lyZWxlc3MlMjBCbHVldG9vdGglMjBFYXJidWRzfGVufDB8MHwwfHx8Mg%3D%3D"
+    },
+    {
+      "id": 7,
+      "title": "Smart LED TV 42 inch",
+      "price": 24999,
+      "description": "Full HD smart TV with built-in apps, voice control, and dynamic contrast.",
+      "category": "electronics",
+      "image": "https://images.unsplash.com/photo-1615210230840-69c07c13b4d1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U21hcnQlMjBMRUQlMjBUViUyMDQyJTIwaW5jaHxlbnwwfDB8MHx8fDI%3D"
+    },
+    {
+      "id": 8,
+      "title": "Portable Bluetooth Speaker",
+      "price": 2299,
+      "description": "Compact speaker with deep bass and long battery life, ideal for travel.",
+      "category": "electronics",
+      "image": "https://images.unsplash.com/photo-1643901102317-b430b45e4cce?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UG9ydGFibGUlMjBCbHVldG9vdGglMjBTcGVha2VyfGVufDB8MHwwfHx8Mg%3D%3D"
+    },
+    {
+      "id": 9,
+      "title": "Wireless Mouse",
+      "price": 799,
+      "description": "Ergonomic wireless mouse with silent clicks and adjustable DPI settings.",
+      "category": "electronics",
+      "image": "https://images.unsplash.com/photo-1563549054059-bf4ebe2f49d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFdpcmVsZXNzJTIwTW91c2V8ZW58MHwwfDB8fHwy"
+    },
+    {
+      "id": 10,
+      "title": "Mechanical Keyboard",
+      "price": 3499,
+      "description": "RGB-backlit mechanical keyboard designed for gaming and productivity.",
+      "category": "electronics",
+      "image": "https://images.unsplash.com/photo-1602025882379-e01cf08baa51?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWVjaGFuaWNhbCUyMEtleWJvYXJkfGVufDB8MHwwfHx8Mg%3D%3D"
+    },
+    {
+      "id": 11,
+      "title": "Modern Wooden Coffee Table",
+      "price": 5999,
+      "description": "Minimalist wooden coffee table with a smooth finish and sturdy base.",
+      "category": "furniture",
+      "image": "https://images.unsplash.com/photo-1524084848619-1161d3c8501a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TW9kZXJuJTIwV29vZGVuJTIwQ29mZmVlJTIwVGFibGV8ZW58MHwwfDB8fHwy"
+    },
+    {
+      "id": 12,
+      "title": "Ergonomic Office Chair",
+      "price": 7499,
+      "description": "Adjustable chair with lumbar support and mesh back for all-day comfort.",
+      "category": "furniture",
+      "image": "https://images.unsplash.com/photo-1603376575925-467d14313a60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEVyZ29ub21pYyUyME9mZmljZSUyMENoYWlyfGVufDB8MHwwfHx8Mg%3D%3D"
+    },
+    {
+      "id": 13,
+      "title": "Queen Size Bed Frame",
+      "price": 11499,
+      "description": "Durable wooden bed frame with a clean modern design and ample support.",
+      "category": "furniture",
+      "image": "https://images.unsplash.com/photo-1719749937521-1aaa41d8e518?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fFF1ZWVuJTIwU2l6ZSUyMEJlZCUyMEZyYW1lfGVufDB8MHwwfHx8Mg%3D%3D"
+    },
+    {
+      "id": 14,
+      "title": "Compact Bookshelf",
+      "price": 2799,
+      "description": "Space-saving bookshelf with 4 tiers and modern wood finish.",
+      "category": "furniture",
+      "image": "https://images.unsplash.com/photo-1626096338675-d4b5d8331a46?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Q29tcGFjdCUyMEJvb2tzaGVsZnxlbnwwfDB8MHx8fDI%3D"
+    },
+    {
+      "id": 15,
+      "title": "Dining Table Set",
+      "price": 9999,
+      "description": "4-seater dining table set with cushioned chairs and walnut finish.",
+      "category": "furniture",
+      "image": "https://images.unsplash.com/photo-1577639179896-9c854d81c609?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RGluaW5nJTIwVGFibGUlMjBTZXR8ZW58MHwwfDB8fHwy"
+    },
+    {
+      "id": 16,
+      "title": "Running Shoes - Men's",
+      "price": 2999,
+      "description": "Lightweight and breathable running shoes designed for comfort and durability.",
+      "category": "shoes",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8UnVubmluZyUyMFNob2VzfGVufDB8MHwwfHx8Mg%3D%3D"
+    },
+    {
+      "id": 17,
+      "title": "Sneakers - Women's",
+      "price": 2499,
+      "description": "Trendy sneakers that offer both style and comfort for daily wear.",
+      "category": "shoes",
+      "image": "https://images.unsplash.com/photo-1465453869711-7e174808ace9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U25lYWtlcnN8ZW58MHwwfDB8fHwy"
+    },
+    {
+      "id": 18,
+      "title": "Leather Boots - Men's",
+      "price": 4499,
+      "description": "Premium leather boots perfect for both formal and casual occasions.",
+      "category": "shoes",
+      "image": "https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGVhdGhlciUyMEJvb3RzJTIwJTIwJTIwTWVuJ3N8ZW58MHwwfDB8fHwy"
+    },
+    {
+      "id": 19,
+      "title": "Flats - Women's",
+      "price": 1299,
+      "description": "Elegant and comfortable flats with cushioned insole for all-day wear.",
+      "category": "shoes",
+      "image": "https://images.unsplash.com/photo-1627388484741-74dcc56ec343?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEZsYXQlMjBzYW5kbGVzJTIwd29tZW58ZW58MHwwfDB8fHwy"
+    },
+    {
+      "id": 20,
+      "title": "Sports Shoes - Men's",
+      "price": 3299,
+      "description": "High-performance sports shoes with added grip and stability for athletes.",
+      "category": "shoes",
+      "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3BvcnRzJTIwU2hvZXN8ZW58MHwwfDB8fHwy"
+    }
+  ]
+}
